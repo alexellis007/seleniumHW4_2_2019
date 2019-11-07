@@ -21,8 +21,6 @@ public class MyStoreSelectProduct {
     public MyStoreSelectProduct(WebDriver driver, WebDriverWait wait) {
         this.driver = driver;
         this.wait = wait;
-//        AjaxElementLocatorFactory factory = new AjaxElementLocatorFactory(driver, 15);
-//        PageFactory.initElements(factory, this);
         PageFactory.initElements(driver, this);
     }
 
@@ -30,13 +28,6 @@ public class MyStoreSelectProduct {
     @FindBy(how = How.CSS, using = "a[title='Women']")
     public WebElement customerGroup;
 
-//    @FindBy(how = How.LINK_TEXT, using = "Dresses")
-//    public WebElement department;
-
-//    @FindBy(how = How.LINK_TEXT, using = "Summer Dresses")
-//    public WebElement dressCode;
-
-//    @FindBy(how = How.XPATH, using = "//ul[@class='product_list grid row']/li")
     @FindBy(how = How.XPATH, using = "//a[@class='product_img_link']")
     public List<WebElement> products;
 
@@ -52,14 +43,6 @@ public class MyStoreSelectProduct {
     public void selectCustomerGroup() {
         customerGroup.click();
     }
-
-//    public void selectDepartment() {
-//        this.department.click();
-//    }
-
-//    public void selectDressCode() {
-//        this.dressCode.click();
-//    }
 
     public void selectProduct() {
         System.out.println((int)products.size());

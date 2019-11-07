@@ -5,14 +5,7 @@ Feature: E-Shop Automation
   Scenario Outline: Make an order and submit
     Given user navigate to the app url
     When user signs in with values "<userEmail>" and "<userPassword>"
-#    And user inputs email with value "<userEmail>"
-#    And user inputs password with value "<userPassword>"
-#    And user submits credentials
-
     And user selects 'Women' menu
-#    And user selects 'Dresses'
-#    And user selects 'Dresses' menu
-#    And user selects 'Summer Dresses'
     And user selects product
     And user adds product to you cart
     And user clicks on 'Proceed to checkout'

@@ -17,8 +17,6 @@ public class MyStoreCheckingOrder {
     public MyStoreCheckingOrder(WebDriver driver, WebDriverWait wait) {
         this.driver = driver;
         this.wait = wait;
-//        AjaxElementLocatorFactory factory = new AjaxElementLocatorFactory(driver, 5);
-//        PageFactory.initElements(factory, this);
         PageFactory.initElements(driver, this);
     }
 

@@ -57,52 +57,10 @@ public class LoginAndOrder {
         logInToPage.clickLogin();
     }
 
-//
-//
-//    @When("^user signs in$")
-//    public void userSignsIn() {
-//        logInToPage.clickSignIn();
-//    }
-//
-//    @When("^user inputs email with value \"([^\"]*)\"$")
-//    public void userInputsEmailWithValue(String email) {
-//        logInToPage.setUserEmail(email);
-//    }
-//
-//    @And("^user inputs password with value \"([^\"]*)\"$")
-//    public void userInputsPasswordWithValue(String password) {
-//        logInToPage.setUserPassword(password);
-//    }
-//
-//    @Then("^user submits credentials$")
-//    public void userSubmitsCredentials() {
-//        logInToPage.clickLogin();
-//    }
-
-//    @And("^user selects 'Dresses' menu$")
-//    public void userSelectsDressesMenu() {
-//        selectProduct.selectCustomerGroup();
-//    }
-//
-//    @And("^user selects 'Summer Dresses'$")
-//    public void userSelectsSummerDresses() {
-//        selectProduct.selectDressCode();
-//    }
-
     @And("^user selects 'Women' menu$")
     public void userSelectsWomenMenu() {
         selectProduct.selectCustomerGroup();
     }
-
-//    @And("^user selects 'Dresses'$")
-//    public void userSelectsDresses() {
-//        selectProduct..selectDepartment();
-//    }
-//
-//    @And("^user selects 'Casual Dresses'$")
-//    public void userSelectsCasualDresses() {
-//        selectProduct.selectDressCode();
-//    }
 
     @And("^user selects product$")
     public void userSelectsProduct() {

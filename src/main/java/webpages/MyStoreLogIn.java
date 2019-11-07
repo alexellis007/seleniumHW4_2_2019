@@ -13,8 +13,6 @@ public class MyStoreLogIn {
     // This is a constructor, as every page need a base driver to find web elements
     public MyStoreLogIn(WebDriver driver) {
         this.driver = driver;
-//        AjaxElementLocatorFactory factory = new AjaxElementLocatorFactory(driver, 5);
-//        PageFactory.initElements(factory, this);
         PageFactory.initElements(driver, this);
     }
 
